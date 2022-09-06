@@ -4,11 +4,12 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
 @font-face {
-  font-family: 'Quicksand';
-  src: local('Quicksand'), url(./fonts/quicksand/Quicksand_Light.otf) format('truetype');
+  font-family: 'Poppins';
+  src: local('Poppins'), url(./fonts/poppins/Poppins-Light.ttf) format('truetype');
 }
 
 a {

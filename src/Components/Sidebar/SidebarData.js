@@ -1,25 +1,35 @@
-import dashboard from '../Images/Menu/Dashboard.png'
-import account from '../Images/Menu/Account.png'
-import calculator from '../Images/Menu/Calculator.png'
-import hyperVault from '../Images/Menu/Hypervolt.png'
-import swap from '../Images/Menu/Swap.png'
+import realEstate from '../Images/Real Estate icon.svg'
+import metaEstate from '../Images/Meta Estate icon.svg'
+import goldDiamond from '../Images/Gold & Diamonds icon.svg'
+import gdMiners from '../Images/G & D Mines icon.svg'
+import smartAgriculture from '../Images/Smart Agricalture icon.svg'
 
 
 const SidebarData = [
      {
-         name : "Dashboard",
-         menuIcon : dashboard,
-         path : "/"
+        name : "Real Estate",
+        menuIcon : realEstate,
+        path : "/"
      },
      {
-        name : "Account",
-        menuIcon : account,
-        path : "/account"
+        name : "Meta Estate",
+        menuIcon : metaEstate,
+        path : "/metaestate"
     },
     {
-        name : "Calculator",
-        menuIcon : calculator,
-        path : "/calculator"
+        name : "Gold & Diamond",
+        menuIcon : goldDiamond,
+        path : "/golddiamond"
+    },
+    {
+        name : "G & D Miners",
+        menuIcon : gdMiners,
+        path : "/gdminers"
+    },
+    {
+        name : "Smart Agriculture",
+        menuIcon : smartAgriculture,
+        path : "/smartagri"
     }
  ]
 export default SidebarData;

@@ -15,21 +15,22 @@ function App() {
   const [walletProvider, setWalletProvider] = useState();
 
   return (
-    <div className="outbox">
+    <>
       <Navbar sidebar={sidebar} set={setSidebar}  setShowModal={setShowModal} walletProvider={walletProvider}/>
-      <div className="body">
+      <div className='body'>
         <div className="sidebar_body">
           <Sidebar sidebar={sidebar} set={setSidebar}/>
         </div>
         <div className="home_body">
           <Routes>
             <Route exact element={<Home   />} path='/' />
-            <Route exact element={<Accounts/>} path='/account' />
-            <Route exact element={<Calculator/>} path='/calculator' />
+            <Route exact element={<Accounts/>} path='/metaestate' />
+            <Route exact element={<Calculator/>} path='/golddiamond' />
           </Routes>
-        </div>
       </div>
+      <ConnectWallet showModal={showModal} setShowModal={setShowModal} walletProvider={walletProvider} setWalletProvider={setWalletProvider} />
     </div>
+    </>
   );
 }
 

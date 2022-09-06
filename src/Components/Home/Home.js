@@ -11,7 +11,6 @@ const Home = () => {
   }
   return (
     <div className='home'>
-        <div>asdfasdfdddddddddddddddddddddddddddddddddddddd</div>
         <div className="marketplace_desc">
             {marketplaceData.map((val, ind)=>{
               return(

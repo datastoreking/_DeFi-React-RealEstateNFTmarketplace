@@ -3,49 +3,50 @@
     width: 100%;
     height: 100px;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #0000001A;
+    justify-content: space-between;
 }
 
-.navbar p {
-	font-family: 'Quicksand';
-    margin-left: 10px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
+.search-box{
+    width: 601px;
+    height: 46px;
+    border: 1px solid var(--lines);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E5E8EB;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.navbar p span {
-    font-size: 16px;
+.user-bar{
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
 }
 
-.connectwalletBtn {
-	font-family: sans-serif;
-    margin-left: 20px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
+.user-icon, .wallet-icon, .logo-icon{
     cursor: pointer;
-    background: #24D5A9;
-    border-radius: 10px;
-    padding: 8px 14px;
-    color: #fff;
 }
 
-.navbar button {
-    display: none;
-    font-size: 30px;
-    margin-left: 10px;
-    color: #fff;
-    cursor: pointer;
-    border: none;
+.logo-icon{
+    margin-left: 50px;
 }
 
-.navbar button {
+.user-bar{
+    margin-right: 50px;
+}
+
+.swap-btn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
     background: none;
-    width: none;
+    border: 1px solid #E5E8EB;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 .hamburger {
@@ -59,14 +60,14 @@
 .hamburger div {
     height: 3px;
     width: 35px;
-    background-color: #ffffff;
+    background-color: #000000;
     margin: 8px 0;
     transition: all 0.3s ease;
 }
 
 @media (max-width: 992px) {
-    .navbar button {
-        display: block;
+    .user-bar, .search-box{
+        display: none;
     }
     .hamburger {
         display: block;
@@ -81,21 +82,14 @@
         height: 20px;
         width: 20px;
     }
-    .navbar p {
-        font-size: 16px;
-    }
-    .navbar p span {
-        font-size: 12px;
-    }
+    
     .navbar a {
         padding: 3px 10px;
         font-size: 16px;
         margin-left: 10px;
         line-height: 18px;
     }
-    .navbar button {
-        font-size: 20px;
-    }
+    
 }
 
 .toggle .line1 {
