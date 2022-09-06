@@ -3,6 +3,7 @@ import Logo from '../Images/SRG logo.png'
 import UserIcon from '../Images/User icon.svg'
 import WalletIcon from '../Images/Wallet icon.svg'
 import SRGCoin from '../Images/SRG coin.png'
+import SearchIcon from '../Images/Search icon.svg'
 
 const Navbar = ({ sidebar, set, setShowModal, walletProvider}) => {
 
@@ -13,7 +14,10 @@ const Navbar = ({ sidebar, set, setShowModal, walletProvider}) => {
   return (
     <div className="navbar">
       <img src={Logo} className="logo-icon" alt={Logo}/>
-      <input type="text" placeholder="Search items, collections and accounts" className="search-box" />
+      <label htmlFor="search" className="search-box-container">
+        <input type="text" placeholder="Search items, collections and accounts" className="search-box" />
+        <img src={SearchIcon} className="search-icon" alt="search icon" />
+      </label>
       <div className="user-bar">
         <img src={UserIcon} className="user-icon" alt="user icon"/>
         <img src={WalletIcon} className="wallet-icon" alt="wallet icon"/>

@@ -1,8 +1,6 @@
 import React from 'react'
-import logo from '../Images/Logo.png'
-import {NavLink, Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import SidebarData from './SidebarData'
-
 
 const Sidebar = ({sidebar, set}) => {
   return (
