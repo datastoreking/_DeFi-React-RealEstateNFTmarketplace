@@ -1,5 +1,5 @@
 import React from 'react'
-import Explore from '../Images/Background image header.png'
+import Explore from '../Images/Background image header with cubs.png'
 
 const Part1 = () => {
   return (
