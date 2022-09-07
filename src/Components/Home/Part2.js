@@ -5,6 +5,17 @@ const Part2 = () => {
   return (
     <div className='part2'>
         <h1>Top Collections over </h1>
+        <div className="collection-box">
+          <div className="collection-name">
+            Collection Name
+          </div>
+          <div className="collection-name">
+            Collection Name
+          </div>
+          <div className="collection-name">
+            Collection Name
+          </div>
+        </div>
     </div>
   )
 }
